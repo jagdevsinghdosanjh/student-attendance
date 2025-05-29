@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Attendance</title>
+    <link rel="stylesheet" href="more_style.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form id="studentForm">
+        <input type="text" id="studentId" placeholder="Student ID (Unique)" required>
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="fatherName" placeholder="Father Name" required>
+        <input type="text" id="motherName" placeholder="Mother Name" required>
+        <input type="date" id="dob" required>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input type="text" id="class" placeholder="Class" required>
+        <input type="text" id="section" placeholder="Section" required>
+        <input type="text" id="mobileNumber" placeholder="Mobile Number" required>
+        <button type="submit">Register Student</button>
+    </form>
+
+    <h2>Mark Attendance</h2>
+    <select id="studentList"></select>
+    <select id="status">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+        <option value="Leave">Leave</option>
+    </select>
+    <button onclick="markAttendance()">Mark Attendance</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

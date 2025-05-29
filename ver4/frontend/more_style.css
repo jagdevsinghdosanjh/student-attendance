@@ -1,0 +1,86 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  color: #333;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for the form */
+.attendance-view-form {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling each field container */
+.attendance-view-form div {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.attendance-view-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input & Select fields */
+.attendance-view-form input[type="number"],
+.attendance-view-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.attendance-view-form input[type="number"]:focus,
+.attendance-view-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styling */
+.attendance-view-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.attendance-view-form button:hover {
+  background: #0056b3;
+}
+
+/* Monthly Attendance Display Container */
+#monthlyAttendanceDisplay {
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;

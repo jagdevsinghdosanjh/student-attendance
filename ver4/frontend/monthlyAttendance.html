@@ -1,0 +1,35 @@
+<!-- frontend/monthlyAttendance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Attendance View</title>
+  <link rel="stylesheet" href="more_style.css" />
+</head>
+<body>
+  <h1>View Monthly Attendance Datewise</h1>
+  
+  <div class="attendance-view-form">
+    <div>
+      <label for="attStudentList">Select Student: </label>
+      <select id="attStudentList"></select>
+    </div>
+    <div>
+      <label for="month">Month: </label>
+      <input type="number" id="month" placeholder="Month (1-12)" min="1" max="12" />
+    </div>
+    <div>
+      <label for="year">Year: </label>
+      <input type="number" id="year" placeholder="Year" />
+    </div>
+    <div>
+      <button onclick="viewMonthlyAttendance()">View Attendance</button>
+    </div>
+  </div>
+
+  <div id="monthlyAttendanceDisplay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
